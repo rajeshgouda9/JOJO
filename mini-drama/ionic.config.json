@@ -1,0 +1,7 @@
+{
+  "name": "mini-drama",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

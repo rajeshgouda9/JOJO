@@ -1,0 +1,436 @@
+/* Ionic Variables and Theming. For more info, please see:
+http://ionicframework.com/docs/theming/ */
+
+:root {
+  /** primary **/
+  --ion-color-primary: #e50914; /* Netflix Red */
+  --ion-color-primary-rgb: 229,9,20;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #c90812;
+  --ion-color-primary-tint: #e7222c;
+
+  /** secondary **/
+  --ion-color-secondary: #b2070a; /* Darker Red */
+  --ion-color-secondary-rgb: 178,7,10;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255,255,255;
+  --ion-color-secondary-shade: #9d0609;
+  --ion-color-secondary-tint: #ba2023;
+
+  /** tertiary **/
+  --ion-color-tertiary: #ff473a; /* Lighter Red / Accent */
+  --ion-color-tertiary-rgb: 255,71,58;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255,255,255;
+  --ion-color-tertiary-shade: #e03e33;
+  --ion-color-tertiary-tint: #ff594d;
+
+  /** success **/
+  --ion-color-success: #2dd36f;
+  --ion-color-success-rgb: 45,211,111;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255,255,255;
+  --ion-color-success-shade: #28ba62;
+  --ion-color-success-tint: #42d77d;
+
+  /** warning **/
+  --ion-color-warning: #ffc409;
+  --ion-color-warning-rgb: 255,196,9;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0,0,0;
+  --ion-color-warning-shade: #e0ac08;
+  --ion-color-warning-tint: #ffca22;
+
+  /** danger **/
+  --ion-color-danger: #eb445a;
+  --ion-color-danger-rgb: 235,68,90;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255,255,255;
+  --ion-color-danger-shade: #cf3c4f;
+  --ion-color-danger-tint: #ed576b;
+
+  /** dark **/
+  --ion-color-dark: #222428; /* Slightly lighter than page background for elements */
+  --ion-color-dark-rgb: 34,36,40;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255,255,255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /** medium **/
+  --ion-color-medium: #666666; /* For secondary text or borders */
+  --ion-color-medium-rgb: 102,102,102;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255,255,255;
+  --ion-color-medium-shade: #5a5a5a;
+  --ion-color-medium-tint: #757575;
+
+  /** light **/
+  --ion-color-light: #1e1e1e; /* Card, Item backgrounds */
+  --ion-color-light-rgb: 30,30,30;
+  --ion-color-light-contrast: #ffffff; /* Text on light background */
+  --ion-color-light-contrast-rgb: 255,255,255;
+  --ion-color-light-shade: #1a1a1a;
+  --ion-color-light-tint: #353535;
+
+  /* Set the text color for the whole app */
+  --ion-text-color: #e5e5e5; /* Light grey for general text */
+  --ion-text-color-rgb: 229,229,229;
+
+  /* Set the background color for the whole app */
+  --ion-background-color: #141414; /* Very dark grey, almost black */
+  --ion-background-color-rgb: 20,20,20;
+
+  /* Set the border color */
+  --ion-border-color: #333333; /* Darker border for elements */
+
+  /* Set the color for ion-item lines */
+  --ion-item-border-color: var(--ion-border-color);
+
+  /* Tab bar specific styles */
+  --ion-tab-bar-background: #000000;
+  --ion-tab-bar-color: var(--ion-color-medium); /* Inactive tab icon/label color */
+  --ion-tab-bar-color-selected: var(--ion-color-primary); /* Active tab icon/label color */
+  --ion-tab-bar-border-color: #222222; /* Optional: border for tab bar */
+
+  /* Toolbar specific styles */
+  --ion-toolbar-background: #000000;
+  --ion-toolbar-color: var(--ion-text-color);
+  --ion-toolbar-border-color: #222222; /* Optional: border for toolbar */
+
+  /* Card specific styles */
+  --ion-card-background: var(--ion-color-light);
+  --ion-card-color: var(--ion-text-color); /* Text color inside cards */
+}
+
+/*
+   * Dark Colors
+   * -------------------------------------------
+   */
+
+body {
+  /* Ensure the dark theme variables are applied.
+     Ionic automatically applies the dark theme if prefers-color-scheme is dark,
+     but we are enforcing our dark theme as default here. */
+
+  --ion-color-primary: #e50914;
+  --ion-color-primary-rgb: 229,9,20;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #c90812;
+  --ion-color-primary-tint: #e7222c;
+
+  --ion-color-secondary: #b2070a;
+  --ion-color-secondary-rgb: 178,7,10;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255,255,255;
+  --ion-color-secondary-shade: #9d0609;
+  --ion-color-secondary-tint: #ba2023;
+
+  --ion-color-tertiary: #ff473a;
+  --ion-color-tertiary-rgb: 255,71,58;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255,255,255;
+  --ion-color-tertiary-shade: #e03e33;
+  --ion-color-tertiary-tint: #ff594d;
+
+  --ion-color-success: #2dd36f;
+  --ion-color-success-rgb: 45,211,111;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255,255,255;
+  --ion-color-success-shade: #28ba62;
+  --ion-color-success-tint: #42d77d;
+
+  --ion-color-warning: #ffc409;
+  --ion-color-warning-rgb: 255,196,9;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0,0,0;
+  --ion-color-warning-shade: #e0ac08;
+  --ion-color-warning-tint: #ffca22;
+
+  --ion-color-danger: #eb445a;
+  --ion-color-danger-rgb: 235,68,90;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255,255,255;
+  --ion-color-danger-shade: #cf3c4f;
+  --ion-color-danger-tint: #ed576b;
+
+  --ion-color-dark: #3a3a3a; /* Elements like cards or items on a very dark background */
+  --ion-color-dark-rgb: 58,58,58;
+  --ion-color-dark-contrast: #e5e5e5;
+  --ion-color-dark-contrast-rgb: 229,229,229;
+  --ion-color-dark-shade: #333333;
+  --ion-color-dark-tint: #4e4e4e;
+
+  --ion-color-medium: #808080; /* Secondary text, icons */
+  --ion-color-medium-rgb: 128,128,128;
+  --ion-color-medium-contrast: #e5e5e5;
+  --ion-color-medium-contrast-rgb: 229,229,229;
+  --ion-color-medium-shade: #717171;
+  --ion-color-medium-tint: #8d8d8d;
+
+  --ion-color-light: #1e1e1e; /* Background for elements like cards or list items */
+  --ion-color-light-rgb: 30,30,30;
+  --ion-color-light-contrast: #e5e5e5; /* Text color on these light elements */
+  --ion-color-light-contrast-rgb: 229,229,229;
+  --ion-color-light-shade: #1a1a1a;
+  --ion-color-light-tint: #353535;
+
+  /** General app text and background colors for dark mode **/
+  --ion-text-color: #e5e5e5; /* Default text color */
+  --ion-text-color-rgb: 229,229,229;
+
+  --ion-background-color: #141414; /* Main background color */
+  --ion-background-color-rgb: 20,20,20;
+
+  --ion-item-background: var(--ion-color-light); /* Background for items in lists */
+  --ion-item-color: var(--ion-text-color); /* Text color for items in lists */
+
+  --ion-border-color: #2a2a2a; /* Border color for elements */
+  --ion-item-border-color: var(--ion-border-color); /* Ensure list item lines use this */
+
+
+  /* Specific component overrides for dark theme */
+  --ion-tab-bar-background: #000000;
+  --ion-tab-bar-color: var(--ion-color-medium);
+  --ion-tab-bar-color-selected: var(--ion-color-primary);
+  --ion-tab-bar-border-color: #222222;
+
+  --ion-toolbar-background: #000000;
+  --ion-toolbar-color: var(--ion-text-color);
+  --ion-toolbar-border-color: #222222;
+
+  --ion-card-background: var(--ion-color-light);
+  --ion-card-color: var(--ion-text-color);
+  --ion-card-header-color: var(--ion-text-color);
+  --ion-card-subtitle-color: var(--ion-color-medium);
+  --ion-card-title-color: var(--ion-text-color);
+
+  --ion-searchbar-background: var(--ion-color-light);
+  --ion-searchbar-color: var(--ion-text-color); /* Text input color */
+  --ion-searchbar-placeholder-color: var(--ion-color-medium);
+  --ion-searchbar-clear-button-color: var(--ion-color-medium);
+  --ion-searchbar-icon-color: var(--ion-color-medium); /* Search icon color */
+}
+
+/* iOS Specific Overrides */
+.ios body {
+  --ion-background-color: #0d0d0d; /* Slightly different shade for iOS if desired */
+  --ion-toolbar-background: #0d0d0d;
+  --ion-tab-bar-background: #0d0d0d;
+}
+
+/* Material Design Specific Overrides */
+.md body {
+  --ion-background-color: #141414;
+  --ion-toolbar-background: #141414;
+  --ion-tab-bar-background: #141414;
+  --ion-item-button-color: var(--ion-color-primary); /* For ripple effects or accents */
+}
+
+/* Custom styles for HomePage cards to make them more Netflix-like */
+.home-page-card {
+  --ion-item-background: var(--ion-color-dark); /* Darker background for cards */
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 16px;
+  border-radius: 4px; /* Optional: slight rounding */
+}
+
+.home-page-card ion-card-header {
+  padding-bottom: 8px;
+}
+
+.home-page-card ion-card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--ion-text-color);
+}
+
+.home-page-card ion-card-subtitle {
+  font-size: 0.8rem;
+  color: var(--ion-color-medium);
+}
+
+/* Styling for list headers in HomePage */
+.list-header-label {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--ion-text-color);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 16px; /* Align with item padding */
+}
+
+/* Profile Page Specific Styles */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+  border: 3px solid var(--ion-color-primary);
+}
+
+.profile-name {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--ion-text-color);
+}
+
+.profile-email {
+  font-size: 1.1em;
+  color: var(--ion-color-medium);
+  margin-bottom: 20px;
+}
+
+.profile-list ion-item {
+  --ion-item-background: var(--ion-color-light); /* Darker items */
+  --color: var(--ion-text-color); /* Text color for items */
+}
+
+.profile-list ion-icon {
+  color: var(--ion-color-primary); /* Red icons */
+}
+
+/* Custom Tab Bar Styling for Centering and Netflix Look */
+ion-tab-bar {
+  --background: var(--ion-toolbar-background, #000000); /* Use existing dark background */
+  --color: var(--ion-tab-bar-color, var(--ion-color-medium)); /* Inactive color */
+  --color-selected: var(--ion-tab-bar-color-selected, var(--ion-color-primary)); /* Active color (Netflix Red) */
+  --border-color: var(--ion-toolbar-border-color, #222222); /* Border color */
+  display: flex;
+  justify-content: space-around; /* This will distribute space evenly around items */
+  align-items: center;
+  padding: 0; /* Remove default padding if any */
+  min-height: 56px; /* A common height for tab bars */
+}
+
+ion-tab-button {
+  flex: 1; /* Allows each button to take up equal space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px; /* Adjust padding for icon and label alignment */
+  padding-bottom: 6px;
+  max-width: none; /* Override Ionic's max-width for tab buttons */
+  color: var(--ion-tab-bar-color, var(--ion-color-medium)); /* Ensure inactive color is applied */
+  --ripple-color: transparent; /* Remove ripple effect for a cleaner look if desired */
+}
+
+ion-tab-button ion-icon {
+  font-size: 20px; /* Slightly smaller icon size for a cleaner look */
+  margin-bottom: 2px; /* Space between icon and label */
+  color: inherit; /* Inherit color from parent tab-button */
+}
+
+ion-tab-button ion-label {
+  font-size: 10px; /* Smaller label size */
+  font-weight: 500;
+  text-transform: none; /* Keep label text as is, no uppercase */
+  margin-top: 0;
+  margin-bottom: 2px; /* Small margin at the bottom */
+  color: inherit; /* Inherit color from parent tab-button */
+}
+
+/* Style for the selected tab button */
+ion-tab-button.tab-selected {
+  color: var(--ion-tab-bar-color-selected, var(--ion-color-primary)); /* Active color */
+}
+
+ion-tab-button.tab-selected ion-icon,
+ion-tab-button.tab-selected ion-label {
+  color: var(--ion-tab-bar-color-selected, var(--ion-color-primary)); /* Ensure icon and label also get active color */
+}
+
+/* Remove default Ionic borders if a top border is preferred */
+ion-tab-bar::before {
+ content: none; /* Removes default top border line if any */
+}
+
+/* Optional: Add a subtle top border if you removed the default one and still want one */
+/*
+ion-tab-bar {
+  border-top: 1px solid var(--ion-tab-bar-border-color, #222222);
+}
+*/
+
+/* Profile Page Specific Styles */
+
+/* Container for the avatar and user details */
+.profile-container {
+  text-align: center;
+  padding: 20px 20px 30px 20px; /* Added more bottom padding */
+  background-color: var(--ion-background-color); /* Ensure it matches page background */
+}
+
+/* Avatar styling */
+.profile-avatar {
+  margin: 0 auto 15px auto;
+  width: 100px; /* Reduced size slightly */
+  height: 100px; /* Reduced size slightly */
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--ion-color-primary); /* Use primary color for border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* User name styling */
+.profile-name {
+  display: block;
+  font-size: 1.6em; /* Slightly adjusted size */
+  font-weight: bold;
+  color: var(--ion-text-color);
+  margin-bottom: 4px; /* Space between name and email */
+}
+
+/* User email styling */
+.profile-email {
+  display: block;
+  font-size: 0.9em;
+  color: var(--ion-color-medium); /* Use medium color for less emphasis */
+  margin-bottom: 20px; /* Space before the list starts */
+}
+
+/* General styling for list items in profile */
+.profile-list ion-item {
+  --background: var(--ion-color-light); /* Darker background for items */
+  --color: var(--ion-text-color); /* Text color */
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+  --border-color: var(--ion-border-color); /* Consistent border color */
+  --min-height: 50px;
+}
+
+/* Ensure icons in the main list use the primary color */
+.profile-list ion-item ion-icon[slot="start"]:not(.logout-item ion-icon) {
+  color: var(--ion-color-primary);
+  margin-right: 16px; /* Space between icon and label */
+}
+
+/* Specific styling for the logout item */
+.logout-item {
+  --background: var(--ion-color-light); /* Consistent item background */
+  margin-top: 20px; /* Add some space above the logout button */
+}
+
+.logout-item ion-icon[slot="start"] {
+  color: var(--ion-color-danger); /* Danger color for logout icon */
+  margin-right: 16px;
+}
+
+.logout-item ion-label {
+  color: var(--ion-color-danger); /* Danger color for logout text */
+  font-weight: 500; /* Slightly bolder */
+}
+
+/* Styling for IonAlert buttons for consistency */
+.alert-button.danger {
+  color: var(--ion-color-danger) !important; /* Ensure danger color is applied */
+}

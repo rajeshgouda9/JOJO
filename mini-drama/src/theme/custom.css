@@ -1,0 +1,18 @@
+<div className="profile-container">
+  <div className="profile-avatar">
+    <img src={user.avatar} alt="User avatar" />
+  </div>
+  <IonLabel className="profile-name">{user.name}</IonLabel>
+  <IonLabel className="profile-email">{user.email}</IonLabel>
+</div>
+
+<IonList className="profile-list">
+  ...
+</IonList>
+
+<IonList className="profile-list">
+  <IonItem button detail={false} className="logout-item">
+    <IonIcon slot="start" icon={logOutOutline} />
+    <IonLabel>Logout</IonLabel>
+  </IonItem>
+</IonList>
